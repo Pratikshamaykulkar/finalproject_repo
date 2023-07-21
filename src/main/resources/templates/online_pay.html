@@ -1,0 +1,126 @@
+ 
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online pay</title>
+  <link rel="stylesheet" href="../static/css/online_pay.css" th:href="@{/css/online_pay.css}">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <div class="logo">
+            <a href="">JFood</a>
+          </div>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/explore">EXPLORE FOOD</a></li>
+            <li><a href="/reviews">REVIEW</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <form id="order-form">
+      <div class="form-group">
+        <label for="payment-method"><strong>Payment Method:</strong></label><br>
+        <div class="payment-methods">
+          <input type="radio" id="phonepay" name="payment-method" value="phonepay" required>
+          <label for="phonepay"><img src="../static/images/phone_pay.jpg" th:src="@{/images/phone_pay.jpg}" alt="PhonePe"></label>
+          <input type="radio" id="googlepay" name="payment-method" value="googlepay" required>
+          <label for="googlepay"><img src="../static/images/googl_pay.png" th:src="@{/images/googl_pay.png}" alt="Google Pay"></label>
+          <input type="radio" id="paytm" name="payment-method" value="paytm" required>
+          <label for="paytm"><img src="../static/images/paytm 2.png 2.png" th:src="@{/images/paytm 2.png}"alt="Paytm"></label>
+        </div>
+      </div>
+
+      <div id="payment-details" style="display: none;">
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number:</label>
+          <input type="text" class="form-control" id="mobile-number" required>
+        </div>
+        <div class="form-group">
+          <label for="upi-id">UPI ID:</label>
+          <input type="text" class="form-control" id="upi-id" required>
+        </div>
+        <div class="form-group">
+          <label for="payment-amount">Payment Amount:</label>
+          <input type="number" class="form-control" id="payment-amount" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container-3">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p4>Nagpur Road,</p4><br>
+          <p5>Civil Lines,Chandrapur</p5><br>
+          <p5>Maharashtra(442401)</p5>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li><br>
+            <li><a href="/about">About</a></li><br>
+            <li><a href="/explore">Explore Food</a></li><br>
+            <li><a href="/reviews">Review</a></li><br>
+            <li><a href="/orderpg">Order</a></li><br>
+            <li><a href="/contact">Contact</a></li><br>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="">+123-456-7890</a></li>
+            <li><a href="">+111-222-3330</a></li>
+            <li><a href="#">hudpriya@gmail.com</a></li>
+            <li><a href="#">raneprati@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social-links</h4>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p6>Copyright &copy: 2019 JFood. <span>All Rights Reserved</span></p6>
+    </div>
+  </footer>
+
+  <script src="../static/javascript/online_pay.js" th:src="@{/javascript/online_pay.js}"></script>
+
+</body>
+
+</html> 
+
+

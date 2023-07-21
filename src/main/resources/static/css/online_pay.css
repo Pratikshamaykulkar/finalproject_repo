@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Poppins:wght@400;800&family=Work+Sans:ital@0;1&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    
+}
+
+.main{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(33, 30, 30);  
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    margin: 0px;
+    margin-right: 100px;
+}
+ul, li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+ .logo a{
+    font-size: 39px;
+    color: red;
+    font-weight: bold;
+    margin-left: 100px;
+} 
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: red;
+}
+
+ 
+   .container {
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #b3b4bc;
+    border-radius: 8px;
+  }
+  
+  strong {
+    font-size: 25px;
+    
+  }
+  
+  
+  #order-form {
+    text-align: center;
+  }
+  
+  
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .payment-methods input[type="radio"] {
+    display: none;
+  }
+  
+  .payment-methods label {
+    cursor: pointer;
+    margin: 0 10px;
+   
+  }
+  
+ 
+.payment-methods label img {
+    width: 120px; 
+    height: 80px; 
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin-top: 8px; 
+  }
+  
+  .payment-methods input[type="radio"]:checked + label img {
+    border-color: #007bff; 
+  }
+  
+  
+  #payment-details {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #payment-details .form-group {
+    margin-bottom: 10px;
+  }
+  
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .btn-primary {
+    display: block;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+ 
+
+
+.footer{
+  background-color: #161616;
+  padding: 70px 0;
+  margin-top: 30px;
+}
+
+.container-3{
+  max-width: 1450px;
+  margin: auto;
+  
+}
+  
+.row{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 20%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+ font-size: 18px;
+ color: rgb(243, 241, 245);
+  text-transform: capitalize; 
+ margin-bottom: 20px;
+ position: relative;
+
+ display: flex;
+ column-gap: 30px;
+
+} 
+.footer-col p4,p5{
+  color: #bbbbbb;
+  font-size: 16px;
+}
+
+.footer-bottom{
+  margin-top: 30px;
+  background: #222121;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p6{
+  font-size: 15px;
+  word-spacing: 2px;
+   text-transform: capitalize;  
+  color: #fff;
+}
+
+.footer-bottom span{
+  font-weight: 200;
+  font-size: 16px;
+  
+  
+} 
+
+.footer-col{
+  color: #fff;
+  font-size: 18px;
+ 
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.footer-col  p4, p5{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+
+
+.social-icon{
+   word-spacing: 2px; 
+  
+   
+}
+
+ 
+
+
+ 

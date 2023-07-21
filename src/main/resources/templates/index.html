@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+  <!-- cdn-links -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<style>
+  .header {
+    background-image: url('images/bg-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+</style>
+
+<body>
+
+  <div class="main">
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <div class="logo">
+            <a href="">JFood</a>
+          </div>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/explore">EXPLORE FOOD</a></li>
+            <li><a href="/reviews">REVIEW</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="overlay">
+          <div class="content">
+            <h1>WELCOME TO <br> JFOOD</h1>
+            <p>We are a multi-cuisine restaurant offering a wide variety of food experience in both casual and fine
+              dining environment. JFood is a family restaurant it serves a variety of delicious dishes from Indian,
+              Chinese and Continental cuisines. It also offers a wide range of beverages to choose from.</p>
+            <br><br>
+            <button><a href="/orderpg">ORDER NOW</a></button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="pop-dish">
+      <h2 class="popular"> Our Popular Dishes</h2>
+      <section class="dishes">
+      
+        <img src="../static/images/veg2.jpg" th:src="@{/images/veg2.jpg}" height="280px" width="250px" class="images">
+        <img src="../static/images/f3.jpg" th:src="@{/images/f3.jpg}" height="280px" width="250px" class="images">
+        <img src="../static/images/veg 1.jpg 1.jpg" th:src="@{/images/veg 1.jpg}" height="280px" width="250px"
+          class="images">
+        <img src="../static/images/f1.jpg" th:src="@{/images/f1.jpg}" height="280px" width="240px" class="images">
+        <img src="../static/images/c3.jpg" th:src="@{/images/c3.jpg}" height="280px" width="250px" class="images">
+        <img src="../static/images/c1.jpg" th:src="@{/images/c1.jpg}" height="280px" width="250px" class="images">
+
+      </section>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container-3">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p4>Nagpur Road,</p4><br>
+          <p5>Civil Lines,Chandrapur</p5><br>
+          <p5>Maharashtra(442401)</p5>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li><br>
+            <li><a href="/about">About</a></li><br>
+            <li><a href="/explore">Explore Food</a></li><br>
+            <li><a href="/reviews">Review</a></li><br>
+            <li><a href="/orderpg">Order</a></li><br>
+            <li><a href="/contact">Contact</a></li><br>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="">+123-456-7890</a></li>
+            <li><a href="">+111-222-3330</a></li>
+            <li><a href="#">hudpriya@gmail.com</a></li>
+            <li><a href="#">raneprati@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social-links</h4>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p6>Copyright &copy: 2019 JFood. <span>All Rights Reserved</span></p6>
+    </div>
+  </footer>
+
+  <!-- <script src="index"></script> -->
+
+
+
+</body>
+
+</html>

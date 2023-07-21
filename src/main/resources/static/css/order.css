@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Poppins:wght@400;800&family=Work+Sans:ital@0;1&display=swap');
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    
+}
+
+.main{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(33, 30, 30);  
+    height: 80px;
+    line-height: 80px;
+    /* padding: 0px 100px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    margin: 0px;
+    margin-right: 100px;
+}
+ul, li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+ .logo a{
+    font-size: 39px;
+    color: red;
+    font-weight: bold;
+    margin-left: 100px;
+} 
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: red;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Styles for main section */
+  main {
+    padding: 20px;
+    background-color: #f5efef;
+    
+  }
+  
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  input,
+  textarea {
+    width: 70%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ecdddd;
+  }
+  
+
+/* Styling for payment mode labels */
+label[for="payment-mode"] {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Styling for payment mode radio buttons */
+  input[type="radio"] {
+    display: none; 
+  }
+  
+  /* Styling for custom radio buttons */
+    input[type="radio"] + label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  } 
+  
+  input[type="radio"]:checked + label {
+    background-color: #2e2d2d;
+    
+  } */
+  
+  /* Styling for payment platforms select box */
+   #payment-platforms {
+    margin-top: 10px;
+  }
+  
+  label[for="platform"] {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select#platform {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } 
+ 
+  button {
+    background-color: #333;
+    color: #f4ecec;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .footer{
+    background-color: #161616;
+    padding: 70px 0;
+    margin-top: 30px;
+}
+
+.container-3{
+    max-width: 1450px;
+    /* background-color: rgb(22, 18, 18); */
+    margin: auto;
+    
+}
+    
+.row{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+   font-size: 18px;
+   color: rgb(243, 241, 245);
+   text-transform: capitalize;
+   margin-bottom: 20px;
+   position: relative;
+
+   display: flex;
+   column-gap: 30px;
+
+} 
+.footer-col p4,p5{
+    color: #fff;
+    font-size: 18px;
+}
+
+ .footer-bottom{
+    margin-top: 30px;
+    background: #222121;
+    width: 100vw;
+    padding: 20px 0;text-align: center;
+}
+
+.footer-bottom p6{
+    font-size: 15px;
+    word-spacing: 2px;
+     text-transform: capitalize; 
+    color: #fff;
+}
+
+.footer-bottom span{
+    font-weight: 200;
+    font-size: 16px;
+    
+} 
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+.footer-col  p4, p5{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+.social-icon{
+     word-spacing: 2px; 
+     
+}
+
+  

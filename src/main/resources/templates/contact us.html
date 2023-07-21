@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <link rel="stylesheet" href="../static/css/contact.css" th:href="@{/css/contact.css}">
+    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+  
+
+  
+</head>
+<style>
+          .contact-section {
+            background-image: url('images/contact-bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            padding: 40px 0;
+        }
+
+</style>
+<body>
+
+    <div class="main">
+        <div class="wrapper">
+          <div class="header">
+            <nav>
+              <div class="logo">
+                <a href="">JFood</a>
+              </div>
+              <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/explore">EXPLORE FOOD</a></li>
+                <li><a href="/reviews">REVIEW</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+              </ul>
+            </nav>
+            </div>
+            </div>
+            </div>
+            
+    
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+          <form class="contact-form"  action="#" th:action="@{/contact}" method="post" th:object="${contact}">
+            <input type="text" class="contact-form-text" placeholder="your name" name="name">
+            <input type="email" class="contact-form-text" placeholder="your email" name="email">
+            <input type="text" class="contact-form-text" placeholder="your phone" name="phone">
+             <textarea class="contact-form-text" placeholder="your message" name="message"></textarea> 
+             <br>
+            <input type="submit" class="contact-form-btn" value="Send">
+
+        </form>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container-3">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Location</h4>
+            <p4>Nagpur Road,</p4><br>
+            <p5>Civil Lines,Chandrapur</p5><br>
+            <p5>Maharashtra(442401)</p5>
+          </div>
+  
+         <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li><br>
+            <li><a href="/about">About</a></li><br>
+            <li><a href="/explore">Explore Food</a></li><br>
+            <li><a href="/reviews">Review</a></li><br>
+            <li><a href="/orderpg">Order</a></li><br>
+            <li><a href="/contact">Contact</a></li><br>
+          </ul>
+         </div>
+  
+  
+         <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="">+123-456-7890</a></li>
+            <li><a href="">+111-222-3330</a></li>
+            <li><a href="#">hudpriya@gmail.com</a></li>
+            <li><a href="#">raneprati@gmail.com</a></li>
+          </ul>
+         </div>
+  
+          <div class="foot-col">
+          <h4>Social-links</h4>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+         </div>
+        </div> 
+      </div>
+       <div class="footer-bottom">
+        <p6>Copyright &copy: 2019 JFood. <span>All Rights Reserved</span></p6>
+      </div> 
+    </footer>
+        
+  
+    
+   
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore food</title>
+  <link rel="stylesheet" href="../static/css/explore.css" th:href="@{/css/explore.css}">
+  <!-- cdn-links -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <div class="logo">
+            <a href="">JFood</a>
+          </div>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/explore">EXPLORE FOOD</a></li>
+            <li><a href="/reviews">REVIEW</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="menu">
+    <div class="heading">
+      <h1>Explore Our Foods</h1>
+      <h3>&mdash;Menu&mdash;</h3>
+    </div>
+
+    <div class="food-items">
+      <img id="pulav-image" src="../static/images/pulav.jpg" th:src="@{/images/pulav.jpg}"
+        onclick="showImagePopup('pulav-image')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Pulav</h5>
+          <h5 class="price">&#8377;85</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="special-dosa-image" src="../static/images/f1.jpg" th:src="@{/images/f1.jpg}"
+        onclick="showImagePopup('special-dosa-image')">
+
+      <div class="details">
+        <div class="details-sub">
+          <h5>Special Dosa</h5>
+          <h5 class="price">&#8377;210</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="non-veg img" src="../static/images/non-veg.jpg" th:src="@{/images/non-veg.jpg}"
+        onclick="showImagePopup('non-veg img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Biryani</h5>
+          <h5 class="price">&#8377;180</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="paneer uttapm img" src="../static/images/paneer uttapm.jpg" th:src="@{/images/paneer uttapm.jpg}"
+        onclick="showImagePopup('paneer uttapm img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Paneer Uttapam</h5>
+          <h5 class="price">&#8377;180</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="thali img" src="../static/images/thali.jpg" th:src="@{/images/thali.jpg}"
+        onclick="showImagePopup('thali img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Thali</h5>
+          <h5 class="price">&#8377;200</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="upma img" src="../static/images/upma.jpg" th:src="@{/images/upma.jpg}"
+        onclick="showImagePopup('upma img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Upma</h5>
+          <h5 class="price">&#8377;80</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="veg img" src="../static/images/veg2.jpg" th:src="@{/images/veg2.jpg}"
+        onclick="showImagePopup('veg img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Veg Biryani</h5>
+          <h5 class="price">&#8377;200</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+    <div class="food-items">
+
+      <img id="sanwich img3" src="../static/images/sandwich3.jpg" th:src="@{/images/sandwich3.jpg}"
+        onclick="showImagePopup('sanwich img3')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Sandwich</h5>
+          <h5 class="price">&#8377;100</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+
+    <div class="food-items">
+
+      <img id="noodles img" src="../static/images/noodles.png" th:src="@{/images/noodles.png}"
+        onclick="showImagePopup('noodles img')">
+      <div class="details">
+        <div class="details-sub">
+          <h5>Noodles</h5>
+          <h5 class="price">&#8377;65</h5>
+        </div>
+        <button><a href="/orderpg">Order Now</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container-3">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p4>Nagpur Road,</p4><br>
+          <p5>Civil Lines,Chandrapur</p5><br>
+          <p5>Maharashtra(442401)</p5>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li><br>
+            <li><a href="/about">About</a></li><br>
+            <li><a href="/explore">Explore Food</a></li><br>
+            <li><a href="/reviews">Review</a></li><br>
+            <li><a href="/orderpg">Order</a></li><br>
+            <li><a href="/contact">Contact</a></li><br>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="">+123-456-7890</a></li>
+            <li><a href="">+111-222-3330</a></li>
+            <li><a href="#">hudpriya@gmail.com</a></li>
+            <li><a href="#">raneprati@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Social-links</h4>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p6>Copyright &copy: 2019 JFood. <span>All Rights Reserved</span></p6>
+    </div>
+  </footer>
+
+  <script src="../static/javascript/explore.js" th:src="@{/javascript/explore.js}"></script>
+
+
+
+</body>
+
+</html>
